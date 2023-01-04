@@ -32,7 +32,7 @@
                     }
                 }
             }
-        }
+
 
             stage('Trigger Deploy') {
                 steps {
