@@ -22,7 +22,6 @@
                     docker tag $IMAGE_NAME $REGISTRY_URL/$IMAGE_NAME:$IMAGE_TAG
                     docker push $REGISTRY_URL/$IMAGE_NAME:$IMAGE_TAG
                     '''
-                    }
                 }
                 post{
                 always {
@@ -34,6 +33,7 @@
                 }
             }
         }
+
             stage('Trigger Deploy') {
                 steps {
                     build job: 'BotDeploy', wait: false, parameters: [
