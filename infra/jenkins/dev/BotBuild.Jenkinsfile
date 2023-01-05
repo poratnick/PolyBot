@@ -23,7 +23,7 @@
                     docker push $REGISTRY_URL/$IMAGE_NAME:$IMAGE_TAG
                     '''
                     }
-                }
+
                 post{
                 always {
                     sh '''
