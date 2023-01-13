@@ -1,0 +1,8 @@
+coordinating:
+   replicaCount: 0
+
+ingest:
+   enabled: false
+
+global:
+   kibanaEnabled: true
