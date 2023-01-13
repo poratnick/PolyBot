@@ -25,7 +25,7 @@ pipeline {
             docker push $REGISTRY_URL/$IMAGE_NAME:$IMAGE_TAG
             '''
             }
-
+        }
             stage('Trigger Deploy') {
                 steps {
                     build job: 'WorkerDeploy', wait: false, parameters: [
