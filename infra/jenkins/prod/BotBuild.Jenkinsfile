@@ -13,7 +13,6 @@
                 IMAGE_NAME = "amip-ecr-bot-prod1"
             }
 
-
                 stages {
                     stage ('botbuild') {
                     steps {
