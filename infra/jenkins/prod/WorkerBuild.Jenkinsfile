@@ -7,7 +7,7 @@ pipeline {
         }
     }
 
-        // TODO prod worker build stage
+       // TODO prod worker build stage
 
     environment {
         REGISTRY_URL ="352708296901.dkr.ecr.eu-north-1.amazonaws.com"
