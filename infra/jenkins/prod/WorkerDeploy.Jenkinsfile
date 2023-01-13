@@ -11,11 +11,6 @@ pipeline {
         APP_ENV = "prod"
     }
 
-    // TODO prod worker deploy pipeline
-
-    environment {
-        APP_ENV = "dev"
-    }
 
     parameters {
         string(name: 'WORKER_IMAGE_NAME')
