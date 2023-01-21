@@ -16,6 +16,8 @@ metadata:
   labels:
     app: bot-app-{{APP_ENV}}
 spec:
+  nodeSelecotor:
+    env: prod
   replicas: 1
   selector:
     matchLabels:
