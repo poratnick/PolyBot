@@ -23,7 +23,6 @@
                     ]) {
                         sh '''
                         K8S_CONFIGS=infra/k8s
-
                         # replace placeholders in YAML k8s files
                         bash common/replaceInFile.sh $K8S_CONFIGS/worker.yaml APP_ENV $APP_ENV
                         bash common/replaceInFile.sh $K8S_CONFIGS/worker.yaml WORKER_IMAGE $WORKER_IMAGE_NAME
